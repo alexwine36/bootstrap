@@ -3,7 +3,7 @@
 /* global Package:true */
 
 Package.describe({
-  name: 'awts:bootstrap-scss',  // https://atmospherejs.com/twbs/bootstrap
+  name: 'alexwine:bootstrap-scss',  // https://atmospherejs.com/twbs/bootstrap
   summary: 'The most popular front-end framework for developing responsive, mobile first projects on the web.',
   version: '4.0.0-alpha.6',
   git: 'https://github.com/alexwine36/bootstrap.git'
