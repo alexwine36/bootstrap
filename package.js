@@ -4,8 +4,8 @@
 
 Package.describe({
   name: 'alexwine:bootstrap-scss',  // https://atmospherejs.com/twbs/bootstrap
-  summary: 'The most popular front-end framework for developing responsive, mobile first projects on the web.',
-  version: '4.0.0-alpha.6',
+  summary: 'Bootstrap 4 - Most popular framework for developing mobile first projects on the web.',
+  version: '4.0.0-alpha.7',
   git: 'https://github.com/alexwine36/bootstrap.git'
 });
 
@@ -87,7 +87,6 @@ Package.onUse(function (api) {
     'scss/mixins/_text-emphasis.scss',
     'scss/mixins/_text-hide.scss',
     'scss/mixins/_text-truncate.scss',
-    'scss/mixins/_transforms.scss',
     'scss/mixins/_transition.scss',
     'scss/mixins/_visibility.scss',
     'scss/utilities/_align.scss',
