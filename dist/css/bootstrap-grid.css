@@ -16,9 +16,8 @@ html {
 }
 
 .container {
-  position: relative;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -80,9 +79,9 @@ html {
 }
 
 .container-fluid {
-  position: relative;
-  margin-left: auto;
+  width: 100%;
   margin-right: auto;
+  margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -166,7 +165,12 @@ html {
   padding-left: 0;
 }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -175,28 +179,48 @@ html {
 }
 
 @media (min-width: 576px) {
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+  .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+  .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+  .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+  .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+  .col-xl-auto {
     padding-right: 15px;
     padding-left: 15px;
   }
 }
 
 @media (min-width: 768px) {
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+  .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+  .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+  .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+  .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+  .col-xl-auto {
     padding-right: 15px;
     padding-left: 15px;
   }
 }
 
 @media (min-width: 992px) {
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+  .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+  .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+  .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+  .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+  .col-xl-auto {
     padding-right: 15px;
     padding-left: 15px;
   }
 }
 
 @media (min-width: 1200px) {
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+  .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+  .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+  .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+  .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+  .col-xl-auto {
     padding-right: 15px;
     padding-left: 15px;
   }
@@ -219,6 +243,7 @@ html {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   width: auto;
+  max-width: none;
 }
 
 .col-1 {
@@ -482,6 +507,7 @@ html {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: auto;
+    max-width: none;
   }
   .col-sm-1 {
     -webkit-box-flex: 0;
@@ -700,6 +726,7 @@ html {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: auto;
+    max-width: none;
   }
   .col-md-1 {
     -webkit-box-flex: 0;
@@ -918,6 +945,7 @@ html {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: auto;
+    max-width: none;
   }
   .col-lg-1 {
     -webkit-box-flex: 0;
@@ -1136,6 +1164,7 @@ html {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: auto;
+    max-width: none;
   }
   .col-xl-1 {
     -webkit-box-flex: 0;
@@ -1516,7 +1545,6 @@ html {
 .align-self-auto {
   -webkit-align-self: auto !important;
       -ms-flex-item-align: auto !important;
-              -ms-grid-row-align: auto !important;
           align-self: auto !important;
 }
 
@@ -1535,7 +1563,6 @@ html {
 .align-self-center {
   -webkit-align-self: center !important;
       -ms-flex-item-align: center !important;
-              -ms-grid-row-align: center !important;
           align-self: center !important;
 }
 
@@ -1548,7 +1575,6 @@ html {
 .align-self-stretch {
   -webkit-align-self: stretch !important;
       -ms-flex-item-align: stretch !important;
-              -ms-grid-row-align: stretch !important;
           align-self: stretch !important;
 }
 
@@ -1706,7 +1732,6 @@ html {
   .align-self-sm-auto {
     -webkit-align-self: auto !important;
         -ms-flex-item-align: auto !important;
-                -ms-grid-row-align: auto !important;
             align-self: auto !important;
   }
   .align-self-sm-start {
@@ -1722,7 +1747,6 @@ html {
   .align-self-sm-center {
     -webkit-align-self: center !important;
         -ms-flex-item-align: center !important;
-                -ms-grid-row-align: center !important;
             align-self: center !important;
   }
   .align-self-sm-baseline {
@@ -1733,7 +1757,6 @@ html {
   .align-self-sm-stretch {
     -webkit-align-self: stretch !important;
         -ms-flex-item-align: stretch !important;
-                -ms-grid-row-align: stretch !important;
             align-self: stretch !important;
   }
 }
@@ -1892,7 +1915,6 @@ html {
   .align-self-md-auto {
     -webkit-align-self: auto !important;
         -ms-flex-item-align: auto !important;
-                -ms-grid-row-align: auto !important;
             align-self: auto !important;
   }
   .align-self-md-start {
@@ -1908,7 +1930,6 @@ html {
   .align-self-md-center {
     -webkit-align-self: center !important;
         -ms-flex-item-align: center !important;
-                -ms-grid-row-align: center !important;
             align-self: center !important;
   }
   .align-self-md-baseline {
@@ -1919,7 +1940,6 @@ html {
   .align-self-md-stretch {
     -webkit-align-self: stretch !important;
         -ms-flex-item-align: stretch !important;
-                -ms-grid-row-align: stretch !important;
             align-self: stretch !important;
   }
 }
@@ -2078,7 +2098,6 @@ html {
   .align-self-lg-auto {
     -webkit-align-self: auto !important;
         -ms-flex-item-align: auto !important;
-                -ms-grid-row-align: auto !important;
             align-self: auto !important;
   }
   .align-self-lg-start {
@@ -2094,7 +2113,6 @@ html {
   .align-self-lg-center {
     -webkit-align-self: center !important;
         -ms-flex-item-align: center !important;
-                -ms-grid-row-align: center !important;
             align-self: center !important;
   }
   .align-self-lg-baseline {
@@ -2105,7 +2123,6 @@ html {
   .align-self-lg-stretch {
     -webkit-align-self: stretch !important;
         -ms-flex-item-align: stretch !important;
-                -ms-grid-row-align: stretch !important;
             align-self: stretch !important;
   }
 }
@@ -2264,7 +2281,6 @@ html {
   .align-self-xl-auto {
     -webkit-align-self: auto !important;
         -ms-flex-item-align: auto !important;
-                -ms-grid-row-align: auto !important;
             align-self: auto !important;
   }
   .align-self-xl-start {
@@ -2280,7 +2296,6 @@ html {
   .align-self-xl-center {
     -webkit-align-self: center !important;
         -ms-flex-item-align: center !important;
-                -ms-grid-row-align: center !important;
             align-self: center !important;
   }
   .align-self-xl-baseline {
@@ -2291,7 +2306,6 @@ html {
   .align-self-xl-stretch {
     -webkit-align-self: stretch !important;
         -ms-flex-item-align: stretch !important;
-                -ms-grid-row-align: stretch !important;
             align-self: stretch !important;
   }
 }
