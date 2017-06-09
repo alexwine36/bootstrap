@@ -5,7 +5,7 @@
 Package.describe({
   name: 'alexwine:bootstrap-scss',  // https://atmospherejs.com/twbs/bootstrap
   summary: 'Bootstrap 4 - Most popular framework for developing mobile first projects on the web.',
-  version: '4.0.0-alpha.7',
+  version: '4.0.0-alpha.11',
   git: 'https://github.com/alexwine36/bootstrap.git'
 });
 
@@ -17,6 +17,7 @@ Package.onUse(function (api) {
 
 
   api.addFiles([
+    'dist/js/popper.js',
     'dist/js/bootstrap.js'
   ], 'client');
 
